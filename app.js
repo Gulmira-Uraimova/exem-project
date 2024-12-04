@@ -1,6 +1,5 @@
 
 
-
 const API = 'http://localhost:3000/product'
 
 async function fetchProduct() {
@@ -19,8 +18,7 @@ async function fetchProduct() {
 function displayProducts(products) {
 	const productList = document.querySelector('.main')
 
-	productList.innerHTML = products.map(
-		(product) => `
+	productList.innerHTML = products.map(product => `
 			<div class ='product'>
 				<img src="${product.img}" alt= 'Error :(' class='product__img' />
 				<h2 class='product__title'>${product.title}</h2>
@@ -43,11 +41,6 @@ async function deleteProduct(id){
 	
 
 }
-
-
-
-
-
 fetchProduct()
 
 async function addProduct() {
@@ -60,8 +53,8 @@ async function addProduct() {
 		id: Date.now(),
 		title,
 		description,
-		img,
 		price: Number(price),
+		img,
 	}
 
 	await fetch(API, {
@@ -73,21 +66,19 @@ async function addProduct() {
 	})
 
 	fetchProduct()
-	// const date = Date.now()
-	// console.log(date);
-	// console.log(typeof title);
+	
 }
 
-// async function searchProduct(event){
-// 	const searchQuery = event.target.value.toLowerCase()
+async function searchProduct(event){
+	const searchQuery = event.target.value.toLowerCase()
 	
 
-// 	const response = await fetch(API)
-// 	const products = await response.json()
+	const response = await fetch(API)
+	const products = await response.json()
 	
 
-// 	const filterProducts = products.filter(product => product.title.toLowerCase().
-//     includes(searchQuery))
-//     displayProducts(filterProducts)
-// }
-// document.getElementById('search').addEventListener('input', searchProduct)
+	const filterProducts = products.filter(product => product.title.toLowerCase().
+    includes(searchQuery))
+    displayProducts(filterProducts)
+}
+document.getElementById('search').addEventListener('input', searchProduct)

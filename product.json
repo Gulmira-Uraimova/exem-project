@@ -1,32 +1,25 @@
-
 {
-    "product": [
-        {
-            "id": 1,
-            "title": "Coffee with cordiceps",
-            "description": "Elite black coffee with 100% certified Cordyceps extract.",
-            "price": 2400,
-            "img": "https://new.s-rich.com/storage/app/uploads/public/637/8c2/d1d/6378c2d1d27de559706682.jpg"
-
-        },
-        {
-            "id": 2,
-            "title": "Chocolate Ganoderma",
-            "description": "It’s the best way to leave your stress behind and feel great the next day.",
-            "price": 2040,
-            "img": "https://new.s-rich.com/storage/app/uploads/public/637/8c3/102/6378c31024223930922966.jpg"
-        },
-        {
-            "id": 3,
-            "title": "Green Tea Ganoderma",
-            "description": "Elite green Longjing tea also known as Dragon well is number one green tea.",
-            "price": 1700,
-            "img": "https://new.s-rich.com/storage/app/uploads/public/637/8c5/5ec/6378c55eca092373585565.jpg"
-            
-        }
-
-
-]
-
-
+  "product": [
+    {
+      "id": "1",
+      "title": "Coffee with cordiceps",
+      "description": "Elite black coffee with 100% certified Cordyceps extract.",
+      "price": 2400,
+      "img": "https://new.s-rich.com/storage/app/uploads/public/637/8c2/d1d/6378c2d1d27de559706682.jpg"
+    },
+    {
+      "title": "Green  Elite Tea Ganoderma",
+      "description": "Elite green Longjing tea also known as Dragon well is number one green tea.",
+      "price": "1700",
+      "img": "https://new.s-rich.com/storage/app/uploads/public/637/8c5/5ec/6378c55eca092373585565.jpg",
+      "id": "3"
+    },
+    {
+      "id": 1733326608714,
+      "title": "Elite tea",
+      "description": "Elite green Longjing tea also known as Dragon well is number one green tea.",
+      "price": 1500,
+      "img": "https://new.s-rich.com/storage/app/uploads/public/637/8c3/102/6378c31024223930922966.jpg"
+    }
+  ]
 }

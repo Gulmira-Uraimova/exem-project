@@ -315,3 +315,12 @@ header {
     font-family: 'Poppins', sans-serif;
 
 }
+#search{
+	width: 400px;
+	margin: 20px 30px 20px 100px;
+	padding: 10px;
+	border-radius: 30px;
+	border: 1px solid blue;
+	outline: none;
+
+}
